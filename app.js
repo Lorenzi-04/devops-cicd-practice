@@ -8,7 +8,9 @@ app.use(express.static('public'));
 // Ruta principal
 app.get('/', (req, res) => {
   res.json({
-    message: 'Hola Mundo!'
+    message: 'Hola Mundo!',
+    timestamp: new Date().toISOString(),
+    version: '1.0.0'
   });
 });
 
