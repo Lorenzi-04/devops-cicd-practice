@@ -1,4 +1,3 @@
-
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
@@ -9,9 +8,7 @@ app.use(express.static('public'));
 // Ruta principal
 app.get('/', (req, res) => {
   res.json({
-    message: 'Hola Mundo!',
-    timestamp: new Date().toISOString(),
-    version: '1.0.0'
+    message: 'Hola Mundo!'
   });
 });
 
